@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特圣保温 - 产品手册</title>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/turn.js/4/turn.min.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Microsoft Yahei", sans-serif;
+  overflow-x: hidden;
+}
+#flipbook {
+  width: 90vw;
+  max-width: 900px;
+  height: 60vw;
+  max-height: 600px;
+}
+#flipbook .page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+#flipbook .page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  #flipbook {
+    max-width: 100vw;
+    max-height: 70vh;
+  }
+}
+.tip {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+<div id="flipbook">
+  <div class="page"><img src="images/page-1.jpg" alt="特圣保温产品手册封面"></div>
+  <div class="page"><img src="images/page-2.jpg" alt="关于我们"></div>
+  <div class="page"><img src="images/page-3.jpg" alt="荣誉资质"></div>
+  <div class="page"><img src="images/page-4.jpg" alt="无机轻集料保温砂浆"></div>
+  <div class="page"><img src="images/page-5.jpg" alt="保温板系列"></div>
+  <div class="page"><img src="images/page-6.jpg" alt="保温板系列详情"></div>
+  <div class="page"><img src="images/page-7.jpg" alt="保温装饰一体板"></div>
+  <div class="page"><img src="images/page-8.jpg" alt="抗裂砂浆 防水砂浆"></div>
+  <div class="page"><img src="images/page-9.jpg" alt="防水涂料"></div>
+  <div class="page"><img src="images/page-10.jpg" alt="轻质抹灰石膏"></div>
+  <div class="page"><img src="images/page-11.jpg" alt="加气块 ALC板材粘结剂"></div>
+  <div class="page"><img src="images/page-12.jpg" alt="保温板粘结剂 灌浆料"></div>
+  <div class="page"><img src="images/page-13.jpg" alt="瓷砖胶系列"></div>
+  <div class="page"><img src="images/page-14.jpg" alt="陶瓷大板胶粘剂"></div>
+  <div class="page"><img src="images/page-15.jpg" alt="内墙腻子系列"></div>
+  <div class="page"><img src="images/page-16.jpg" alt="外墙腻子 内墙防霉腻子"></div>
+  <div class="page"><img src="images/page-17.jpg" alt="干混砂浆 修补砂浆"></div>
+  <div class="page"><img src="images/page-18.jpg" alt="瓷砖背胶系列"></div>
+  <div class="page"><img src="images/page-19.jpg" alt="自流平砂浆系列"></div>
+  <div class="page"><img src="images/page-20.jpg" alt="自流平性能指标"></div>
+  <div class="page"><img src="images/page-21.jpg" alt="耐碱网布 塑料锚栓"></div>
+  <div class="page"><img src="images/page-22.jpg" alt="界面剂 墙固地固"></div>
+  <div class="page"><img src="images/page-23.jpg" alt="EPS GRC线条"></div>
+  <div class="page"><img src="images/page-24.jpg" alt="合作伙伴"></div>
+  <div class="page"><img src="images/page-25.jpg" alt="服务案例"></div>
+  <div class="page"><img src="images/page-26.jpg" alt="服务案例详情"></div>
+  <div class="page"><img src="images/page-27.jpg" alt="服务案例合集"></div>
+  <div class="page"><img src="images/page-28.jpg" alt="销售网络 封底"></div>
+</div>
+<script>
+  $(window).on('load', function() {
+    $("#flipbook").turn({
+      autoCenter: true,
+      elevation: 50,
+      gradients: true,
+      duration: 600,
+    });
+  });
+</script>
+<div class="tip">点击页面左右两侧 / 滑动鼠标滚轮 即可翻页</div>
+</body>
+</html>
